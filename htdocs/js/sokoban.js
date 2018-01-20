@@ -443,16 +443,16 @@ let prototypeGameState = {
 
   GameOver: function (){
 
-    var finished = true,i,j;
+    var finial = true,i,j;
 
     for (var i = 0; i < this.level.length; i++) {
       for (var j = 0; j < this.level[i].length; j++) {
         if(this.level[i][j] == SOKOBAN.GOAL||this.level[i][j] == SOKOBAN.BOX){
-          finished = false;
+          finial = false;
         }
       }
     }
-    if(finished){
+    if(finial){
       alert("恭喜你闖關成功");
     }
   }
